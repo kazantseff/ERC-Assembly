@@ -1,66 +1,30 @@
-## Foundry
+## ERC-Assembly
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
-
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
+This is the implementation of ERC20 built entirely in YUL (inline-assembly).
+It was mainly written for learning purposes and fun.
+This repo also contains tests written in Foundry.
+I will probably expands it by adding more ERC standards over time.
 
 ## Usage
 
-### Build
+### Intallation
 
-```shell
-$ forge build
-```
+1.  Clone the repo:
+    ```
+    git clone https://github.com/kazantseff/ERC-Assembly
+    ```
+2.  Install dependencies:
+    ```
+    forge install
+    ```
 
-### Test
+### Testing
 
-```shell
-$ forge test
-```
+- To run tests:
+  ```
+  forge test
+  ```
 
-### Format
+## Contributions
 
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Contributions are welcome! If you have any suggestions or spotted a mistake in my implementation, feel free to open a pull request.

@@ -3,7 +3,7 @@ pragma solidity ^0.8.20;
 
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract FunToken {
+contract FunToken is IERC20 {
     mapping(address account => uint256) public balances;
 
     mapping(address account => mapping(address spender => uint256))
